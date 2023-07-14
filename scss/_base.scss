@@ -1,0 +1,11 @@
+body {
+	font-family: $ff-main;
+}
+
+
+.container {
+	max-width: $container + 20px;
+	margin-inline: auto;
+	padding: 0 20px;
+}
+

@@ -1,0 +1,64 @@
+.clients-section {
+    padding-bottom: 94px;
+	@include tablet {
+		padding-bottom: 80px;
+	}
+    @include mobile {
+		padding-bottom: 40px;
+	}
+
+    &__title {
+		color: $black;
+		font-family: $ff-main;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 17px;
+	}
+
+    &__text {
+		@include text($darkGrey, $ff-main, 16px, 400, 160%);
+		max-width: 338px;
+        @include tablet {
+            position: relative;
+        }
+
+
+	}
+
+    &__item {
+        display: flex;
+        gap: 60px;
+
+        @include tablet {
+            align-items: stretch;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &__company {
+        display: flex;
+        gap: 60px;
+
+        @include tablet {
+            display: flex;
+            gap: 60px;
+        }
+        @include mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+    }
+    &__img {
+        max-width: 100%;
+    }
+}
+
+#img-top{
+    margin-top: 13px;
+}
+

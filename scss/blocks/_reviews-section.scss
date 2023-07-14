@@ -1,0 +1,113 @@
+.reviews-section {
+    text-align: center;
+
+    &__title {
+		color: $black;
+		font-family: $ff-main;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 17px;
+	}
+
+    &__text {
+		@include text($darkGrey, $ff-main, 16px, 400, 160%);
+    }
+
+    &__users{
+        display: flex;
+        gap: 78px;
+        padding-top: 113px;
+        padding-bottom: 148px;
+
+        @include tablet {
+            display: flex;
+            gap: 60px;
+            padding-top: 64px;
+            padding-bottom: 100px;
+
+        }
+        @include mobile {
+        display: inline-block;
+        padding-top: 56px;
+        padding-bottom: 80px;
+        }
+        
+    }
+}
+
+.users{
+
+    &__text {
+		@include text($darkGrey, $ff-main, 16px, 400, 160%);
+        text-align: left;
+        max-width: 412px;
+    }
+
+    &__name {
+		@include text($black, $ff-main, 24px, 400, 160%);
+        margin-top: 91px;
+        text-align: left;
+        @include mobile {
+            margin-top: 32px;
+            }
+
+
+    }
+
+    &__image {
+        display: flex;
+          @include mobile {
+        display: grid;
+        margin-top: 32px;
+        }
+    }
+}
+
+.image {
+
+    &__col1 {
+        display: flex;
+        flex-direction: column;
+        gap: 47px;
+        margin-top: 58px;
+
+        @include mobile {
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            }
+    }
+
+    &__col2 {        
+        display: flex;
+        flex-direction: column;
+
+        @include mobile {
+            display: flex;
+            flex-direction: row;
+            }
+    }
+
+
+
+}
+
+#users__main{
+    border-radius: 500px 0px 500px 500px;
+    box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+}
+
+#col2__girl_blue{
+    padding: 39px 0 30px 26px;
+}
+
+#col2__girl_violet{
+    margin: 0 auto;
+}
+
+#col1__man{
+    @include mobile {
+    height: 100%;}
+}

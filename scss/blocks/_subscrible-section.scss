@@ -1,0 +1,80 @@
+
+.subscrible-section {    
+    border-radius: 75px;
+    background: #F4F9FF;
+    padding: 98px 92px;
+    margin-bottom: 148px;
+
+		&__title {
+            color: $black;
+            font-family: $ff-main;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 17px;
+		}
+
+		&__text {
+            @include text($darkGrey, $ff-main, 16px, 400, 160%);
+		}
+
+		&__form {
+            border-radius: 60px;
+            border: 1px solid #F1F1F1;
+            background: #FFF;
+            box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            gap: 23px;
+            white-space: nowrap;
+
+            @include mobile {
+                  display: grid;
+                  justify-content: center;
+                  gap: 16px;
+                  border: none;
+                  background: #F4F9FF;
+                  box-shadow: none;
+		}}
+
+      @include tablet {
+            padding: 64px 40px;}
+
+      @include mobile {
+            padding: 64px 40px;}
+
+}
+
+.subscrible-section__container{
+      display: flex;
+      gap: 47px;
+      @include tablet {
+            display: grid;
+      }}
+
+span { 
+      @include text($ligthGrey, $ff-main, 16px, 400, 160%);
+      padding: 20px 34px;
+
+      @include mobile {
+            border-radius: 60px;
+            border: 1px solid #F1F1F1;
+            background: #FFF;
+            box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+        }
+
+
+
+
+}
+
+.subscrible-section__btn {
+      font-size: 16px;
+      display: inline-flex;
+      padding: 20px 40px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+}
