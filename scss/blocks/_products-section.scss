@@ -1,63 +1,59 @@
 .products-section__container{
     display: flex;
-    gap: 118px;
-    padding-top: 146px;
-    padding-bottom: 181px;
-
+    gap: 118rem;
+    padding-top: 146rem;
+    padding-bottom: 181rem;
 	@include tablet {
         display: flex;
-        gap: 60px;		
-		padding-top: 100px;
-		padding-bottom: 100px;
+        gap: 60rem;		
+		padding-top: 100rem;
+		padding-bottom: 100rem;
     }
     @include mobile {
         display: grid;
-        gap: 24px;
-		padding-top: 80px;
-		padding-bottom: 80px;
-
-
+        gap: 24rem;
+		padding-top: 80rem;
+		padding-bottom: 80rem;
     }}
 
 .products-section{
     &__title {
 		color: $black;
 		font-family: $ff-main;
-		font-size: 40px;
+		font-size: 40rem;
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 700;
 		line-height: normal;
-		margin-bottom: 30px;
-        max-width: 468px;
-        margin-top: 82px;
-
+		margin-bottom: 30rem;
+        max-width: 468rem;
+        margin-top: 82rem;
 		@include tablet {
-			margin-top: 0px;
-
+			margin-top: 0rem;
 		}
 		@include mobile {
-			margin-top: 24px;
+			margin-top: 24rem;
+			font-size: 36rem;
 		}
 	}
 
     &__text {
-		@include text($darkGrey, $ff-main, 16px, 400, 160%);
-		max-width: 532px;
+		@include text($darkGrey, $ff-main, 16rem, 400, 160%);
+		max-width: 532rem;
     }
 }
 
 .products-section__video{
 	position: relative;
 	&::before {
-		bottom: -64px;
-		right: -41px;
+		bottom: -64rem;
+		right: -41rem;
 		position: absolute;
 		z-index: -1;
 		content: "";
 		display: block;
-		width: 129px;
-		height: 129px;
-		border-radius: 60px;
+		width: 129rem;
+		height: 129rem;
+		border-radius: 60rem;
 		background: #FFF5DB;
 		@include mobile {
 			display: none;

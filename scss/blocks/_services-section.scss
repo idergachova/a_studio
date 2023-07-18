@@ -1,14 +1,14 @@
 .services-section__container{
     display: flex;
-    gap: 128px;
+    gap: 128rem;
 
     @include tablet {
         display: flex;
-        gap: 60px;
+        gap: 60rem;
     }
     @include mobile {
         display: grid;
-        gap: 24px;
+        gap: 24rem;
     }
 }
 
@@ -17,124 +17,125 @@
     &__title {
         color: $black;
         font-family: $ff-main;
-        font-size: 40px;
+        font-size: 40rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 700;
         line-height: normal;
-        margin-top: 380px;
-        margin-bottom: 30px;
-        max-width: 358px;
-    
-    @include mobile {
-        margin-top: 80px;
-    }}
+        margin-top: 380rem;
+        margin-bottom: 30rem;
+        max-width: 358rem;
+        @include mobile {
+            margin-top: 80rem;
+            font-size: 36rem;
+        }
+    }
 
     &__text {
-		@include text($darkGrey, $ff-main, 16px, 400, 160%);
-		max-width: 396px;
+		@include text($darkGrey, $ff-main, 16rem, 400, 160%);
+		max-width: 396rem;
     }
 
     &__item {
-        @include text($darkGrey, $ff-main, 16px, 400, 160%);
-        max-width: 396px;    
+        @include text($darkGrey, $ff-main, 16rem, 400, 160%);
+        max-width: 396rem;    
         display: grid;
-        gap: 30px;
+        gap: 30rem;
     }
 
     &__features{
         display: flex;
-        gap: 34px;
-    }
+        gap: 34rem;
+        @include mobile {
+            flex-direction: column; 
+        }
+    } 
 }
 
 .item__box{
-    max-width: 308px;
-    border-radius: 40px;
-    border: 1px solid #F2F2F2;
+    max-width: 308rem;
+    border-radius: 40rem;
+    border: 1rem solid #F2F2F2;
     background: $white;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
-    padding: 37px 32px 59px 31px;
+    box-shadow: 0rem 10rem 50rem 0rem rgba(0, 0, 0, 0.05);
+    padding: 37rem 32rem 59rem 31rem;
     position: relative;
 
     &__icon{
-        width: 121px;
-        height: 121px;
-        border-radius: 20px;
+        width: 121rem;
+        height: 121rem;
+        border-radius: 20rem;
         background: #F1F7FF;
-        padding-top: 39px;
+        padding-top: 39rem;
         margin: 0 auto;
-        padding: 24px;
-        margin-bottom: 31px;
+        padding: 24rem;
+        margin-bottom: 31rem;
     }
 
     &__title{
         color: $black;
         text-align: center;
 		font-family: $ff-main;
-		font-size: 24px;
+		font-size: 24rem;
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 700;
 		line-height: normal;
         margin: auto 0;
-        margin-bottom: 27px;
-
+        margin-bottom: 27rem;
         @include mobile {
-            font-size: 16px;}
-
-
+            font-size: 16rem;}
     }
 
     &__text {
 		text-align: center;
-        @include text($darkGrey, $ff-main, 16px, 400, 160%);
-        max-width: 245px;
+        @include text($darkGrey, $ff-main, 16rem, 400, 160%);
+        max-width: 245rem;
         margin: 0 auto;
         @include mobile {
-            font-size: 14px;}
+            font-size: 14rem;}
         }
-
-     @include mobile {
-            padding-bottom: 37px;}
-
- 
+        @include mobile {
+            padding-bottom: 37rem;
+            width: 100%;
+        }
     }
 
-    .item__box_down {
-        margin-top: 96px;
-    }
-    .item__box_up {
-        margin-bottom: 79px;  
-        position: relative;
+.item__box_down {
+    margin-top: 96rem;
+}
 
+.item__box_up {
+    margin-bottom: 79rem;  
+    position: relative;
 
         &::before {
-            bottom: -43px;
-            right: -40px;
+            bottom: -43rem;
+            right: -40rem;
             position: absolute;
             z-index: -1;
             content: "";
             display: block;
-            width: 120px;
-            height: 120px;
-            border-radius: 60px;
+            width: 120rem;
+            height: 120rem;
+            border-radius: 60rem;
             background: #FF007A;
             @include mobile {
                 display: none;
             }
     }
-    &::after {
-        bottom: -36px;
-        right: -32px;
-        position: absolute;
-        z-index: 1;
-        content: "";
-        display: block;
-        width: 105px;
-        height: 105px;
-        border-radius: 60px;
-        background: #fefefe;
-        @include mobile {
-            display: none;
-        }
+
+        &::after {
+            bottom: -36rem;
+            right: -32rem;
+            position: absolute;
+            z-index: 1;
+            content: "";
+            display: block;
+            width: 105rem;
+            height: 105rem;
+            border-radius: 60rem;
+            background: #fefefe;
+            @include mobile {
+                display: none;
+            }
 }}
 

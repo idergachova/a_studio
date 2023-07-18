@@ -1,80 +1,79 @@
 .footer-section {
-    border-top: solid 1px #E4E4E4;
+    border-top: solid 1rem #E4E4E4;
     
     &__box {
-    padding: 60px 0 29px;
+    padding: 60rem 0 29rem;
         display: flex;
-        gap: 150px;
+        gap: 150rem;
         @include tablet{
             display: flex;
             justify-content: space-between;
-            padding-top: 40px;
+            padding-top: 40rem;
             @include mobile {
             flex-direction: column;
-            gap: 40px;
+            gap: 40rem;
             align-items: center;}
         }
     }
 
     &__text {
-        max-width: 283px;
-        @include text($darkGrey, $ff-main, 14px, 400, 160%);
-        margin-top: 26px;
+        max-width: 283rem;
+        @include text($darkGrey, $ff-main, 14rem, 400, 160%);
+        margin-top: 26rem;
         @include tablet {
             display: none;}
     }
 
     &__social {
         display: flex;
-        gap: 16px;
-        margin-top: 40px;
-        margin-bottom: 26px;
+        gap: 16rem;
+        margin-top: 40rem;
+        margin-bottom: 26rem;
         @include tablet {
             margin-top: 0;
         justify-content: center;
-        padding-bottom: 40px;}
+        padding-bottom: 40rem;}
         @include mobile {
             margin: 0 auto;}
 }
 
-
     &__nav {
         display: flex;
-        gap: 100px;
+        gap: 100rem;
         @include tablet {
-            gap: 50px;}
+            gap: 50rem;}
         @include mobile {
             display: grid;
-            grid-template-columns: 1fr 1fr;}
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            gap: 40rem;}
         
     }
     }
 .footer {
     &__a {
-        @include text($darkGrey, $ff-main, 16px, 400, 200%);
+        @include text($darkGrey, $ff-main, 16rem, 400, 200%);
         @include tablet {
-            font-size: 16px}
-            @include tablet {
-                display: none;}
+            font-size: 16rem}     
     }
 }
 .nav {
 
     &__name {
-        @include text($black, $ff-main, 20px, 400, 160%);
+        @include text($black, $ff-main, 20rem, 700, 160%);
         @include tablet {
-            font-size: 16px}
+            font-size: 16rem}
     }
 }
 .copyright{
-    border-top: solid 1px #E4E4E4;
+    border-top: solid 1rem #E4E4E4;
 	color: #A4A4A4;
 	font-family: $ff-main;
-	font-size: 14px;
+	font-size: 14rem;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 160%;
 	text-align: center;
-    padding-top: 17px;
-    padding-bottom: 23px;
+    padding-top: 17rem;
+    padding-bottom: 23rem;
 }

@@ -1,57 +1,54 @@
 .clients-section {
-    padding-bottom: 94px;
+    padding-bottom: 94rem;
 	@include tablet {
-		padding-bottom: 80px;
+		padding-bottom: 80rem;
 	}
     @include mobile {
-		padding-bottom: 40px;
+		padding-bottom: 40rem;
 	}
 
     &__title {
 		color: $black;
 		font-family: $ff-main;
-		font-size: 40px;
+		font-size: 40rem;
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 700;
 		line-height: normal;
-		margin-bottom: 17px;
-	}
+		margin-bottom: 17rem;
+        @include mobile {
+			font-size: 36rem;
+	}}
 
     &__text {
-		@include text($darkGrey, $ff-main, 16px, 400, 160%);
-		max-width: 338px;
+		@include text($darkGrey, $ff-main, 16rem, 400, 160%);
+		max-width: 338rem;
         @include tablet {
             position: relative;
         }
-
-
 	}
 
     &__item {
         display: flex;
-        gap: 60px;
-
+        gap: 60rem;
         @include tablet {
             align-items: stretch;
             flex-direction: column;
-            gap: 24px;
+            gap: 24rem;
         }
     }
 
     &__company {
         display: flex;
-        gap: 60px;
-
+        gap: 60rem;
         @include tablet {
             display: flex;
-            gap: 60px;
+            gap: 60rem;
         }
         @include mobile {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 24px;
+            gap: 24rem;
         }
-
     }
     &__img {
         max-width: 100%;
@@ -59,6 +56,6 @@
 }
 
 #img-top{
-    margin-top: 13px;
+    margin-top: 13rem;
 }
 

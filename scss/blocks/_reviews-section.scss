@@ -4,63 +4,61 @@
     &__title {
 		color: $black;
 		font-family: $ff-main;
-		font-size: 40px;
+		font-size: 40rem;
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 700;
 		line-height: normal;
-		margin-bottom: 17px;
+		margin-bottom: 17rem;
+        @include mobile {
+			font-size: 36rem;
+	}
 	}
 
     &__text {
-		@include text($darkGrey, $ff-main, 16px, 400, 160%);
+		@include text($darkGrey, $ff-main, 16rem, 400, 160%);
     }
 
     &__users{
         display: flex;
-        gap: 78px;
-        padding-top: 113px;
-        padding-bottom: 148px;
-
+        gap: 78rem;
+        padding-top: 113rem;
+        padding-bottom: 148rem;
         @include tablet {
             display: flex;
-            gap: 60px;
-            padding-top: 64px;
-            padding-bottom: 100px;
-
+            gap: 60rem;
+            padding-top: 64rem;
+            padding-bottom: 100rem;
         }
         @include mobile {
         display: inline-block;
-        padding-top: 56px;
-        padding-bottom: 80px;
+        padding-top: 56rem;
+        padding-bottom: 80rem;
         }
-        
     }
 }
 
 .users{
 
     &__text {
-		@include text($darkGrey, $ff-main, 16px, 400, 160%);
+		@include text($darkGrey, $ff-main, 16rem, 400, 160%);
         text-align: left;
-        max-width: 412px;
+        max-width: 412rem;
     }
 
     &__name {
-		@include text($black, $ff-main, 24px, 400, 160%);
-        margin-top: 91px;
+		@include text($black, $ff-main, 24rem, 400, 160%);
+        margin-top: 91rem;
         text-align: left;
         @include mobile {
-            margin-top: 32px;
+            margin-top: 32rem;
             }
-
-
     }
 
     &__image {
         display: flex;
-          @include mobile {
+        @include mobile {
         display: grid;
-        margin-top: 32px;
+        margin-top: 32rem;
         }
     }
 }
@@ -70,37 +68,32 @@
     &__col1 {
         display: flex;
         flex-direction: column;
-        gap: 47px;
-        margin-top: 58px;
-
+        gap: 47rem;
+        margin-top: 58rem;
         @include mobile {
             display: flex;
             flex-direction: row;
             margin: 0 auto;
-            }
+        }
     }
 
     &__col2 {        
         display: flex;
         flex-direction: column;
-
         @include mobile {
             display: flex;
             flex-direction: row;
-            }
+        }
     }
-
-
-
 }
 
 #users__main{
-    border-radius: 500px 0px 500px 500px;
-    box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 500rem 0rem 500rem 500rem;
+    box-shadow: 10rem 20rem 50rem 0rem rgba(0, 0, 0, 0.15);
 }
 
 #col2__girl_blue{
-    padding: 39px 0 30px 26px;
+    padding: 39rem 0 30rem 26rem;
 }
 
 #col2__girl_violet{

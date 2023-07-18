@@ -1,11 +1,16 @@
+html{
+	font-size: 1px;
+}
+
 body {
 	font-family: $ff-main;
+	font-size: 16rem;
 }
 
 
 .container {
 	max-width: $container + 20px;
 	margin-inline: auto;
-	padding: 0 20px;
+	padding: 0 20rem;
 }
 

@@ -1,80 +1,88 @@
 
 .subscrible-section {    
-    border-radius: 75px;
+    border-radius: 75rem;
     background: #F4F9FF;
-    padding: 98px 92px;
-    margin-bottom: 148px;
+    padding: 98rem 92rem;
+    margin-bottom: 148rem;
 
 		&__title {
             color: $black;
             font-family: $ff-main;
-            font-size: 40px;
+            font-size: 40rem;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             line-height: normal;
-            margin-bottom: 17px;
-		}
+            margin-bottom: 17rem;
+            @include mobile {
+			font-size: 36rem;
+	}}
 
 		&__text {
-            @include text($darkGrey, $ff-main, 16px, 400, 160%);
+            @include text($darkGrey, $ff-main, 16rem, 400, 160%);
 		}
 
 		&__form {
-            border-radius: 60px;
-            border: 1px solid #F1F1F1;
+            border-radius: 60rem;
+            border: 1rem solid #F1F1F1;
             background: #FFF;
-            box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
-            padding: 10px;
+            box-shadow: 10rem 20rem 50rem 0rem rgba(0, 0, 0, 0.15);
+            padding: 10rem;
             display: flex;
-            justify-content: space-between;
-            gap: 23px;
+            gap: 57rem;
             white-space: nowrap;
+            width: 100%;
+            max-width: 480rem;
 
             @include mobile {
                   display: grid;
                   justify-content: center;
-                  gap: 16px;
+                  gap: 16rem;
                   border: none;
                   background: #F4F9FF;
                   box-shadow: none;
 		}}
 
       @include tablet {
-            padding: 64px 40px;}
-
+            padding: 64rem 40rem;}
       @include mobile {
-            padding: 64px 40px;}
-
+            padding: 64rem 40rem;}
 }
 
 .subscrible-section__container{
       display: flex;
-      gap: 47px;
+      justify-content: center;
+      gap: 47rem;
       @include tablet {
             display: grid;
       }}
 
-span { 
-      @include text($ligthGrey, $ff-main, 16px, 400, 160%);
-      padding: 20px 34px;
+input { 
+      background: $white;
+      font-family: $ff-main;
+      border: 0;
+      outline: 0;
+      padding: 20rem 0rem 20rem 24rem;
+      width: 100%;
+}
 
+input[type="email"] {
+      color: #959595;
+      border-radius: 25rem;
       @include mobile {
-            border-radius: 60px;
-            border: 1px solid #F1F1F1;
-            background: #FFF;
-            box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
-        }
+            border-radius: 0rem;
+            border: 1rem solid #F1F1F1;
+            padding: 21rem 0rem 20rem 15rem;}
+}
 
-
-
-
+input[type="email"]::placeholder{
+      color: #959595;
 }
 
 .subscrible-section__btn {
-      font-size: 16px;
+      font-size: 16rem;
       display: inline-flex;
-      padding: 20px 40px;
+      padding: 20rem 40rem;
       justify-content: center;
       align-items: center;
-      gap: 10px;
+      gap: 10rem;
 }
